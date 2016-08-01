@@ -1,10 +1,21 @@
 <div class="row">
   <aside class="span4">
     <section>
-      <h1>
+      <h1 class="gravatar">
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
     </section>
   </aside>
+
+  <div class="span8">
+    <% if @user.microposts.any? %>
+      <h3>Microposts (<%= @user.microposts.count %>)</h3>
+      <ol class="microposts">
+        <%= render @microposts %>
+      </ol>
+      <%= will_paginate @microposts, :next_label => "下一页", :previous_label => "上一页", :inner_window => 3 %>
+    <% end %>
+  </div>
+
 </div>

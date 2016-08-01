@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
 # 保存之前把email转换为小写
   before_save { self.email = email.downcase }
 
@@ -19,6 +20,10 @@ class User < ApplicationRecord
 # 生成未加密的remember_token
   def User.new_remember_token
     SecureRandom.urlsafe_base64
+  end
+  
+  def feed
+    Micropost.where("user_id", id)
   end
 
 # 对token进行加密

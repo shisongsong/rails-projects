@@ -28,6 +28,15 @@ module SessionsHelper
     user == current_user
   end
 
+  def signed_in_user
+    #redirect_to signin_path, notice:"请先登录" unless signed_in?
+    unless signed_in?
+      store_location
+      flash[:warning] = "请先登录"
+      redirect_to signin_url
+    end
+  end
+
   def redirect_back_or(default)
     redirect_to(session[:return_to] || default)
     session.delete(:return_to)
