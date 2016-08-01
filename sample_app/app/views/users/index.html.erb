@@ -1,18 +1,8 @@
 <h1>Users List</h1>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Email</th>
-</tr>
-</thead>
 
-<tbody>
-<% @users.each do |user| %>
-<tr>
-<td><%= link_to "#{user.name}", user %></td>
-<td><%= user.email %></td>
-</tr>
-<% end %>
-</tbody>
-</table>
+<%= will_paginate :next_label => "下一页", :previous_label => "上一页", :inner_window => 3 %>
+<ul class="users">
+  <%= render @users %>
+</ul>
+
+<%= will_paginate :next_label => "下一页", :previous_label => "上一页", :inner_window => 3 %>

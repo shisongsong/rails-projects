@@ -1,0 +1,27 @@
+<h1>修改资料</h1>
+<div class="row">
+  <%= render 'shared/error_messages' %>
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= gravatar_for @user %>
+        <a href="http://gravatar.com/emails">修改头像</a>
+      </h1>
+    </section>
+  </aside>
+
+  <div class="span6 offset3">
+    <%= form_for (@user) do |f| %> 
+      <%= f.label "姓名" %>
+      <%= f.text_field :name %>
+      <%= f.label "邮箱" %>
+      <%= f.text_field :email %>
+      <%= f.label "密码" %>
+      <%= f.password_field :password %>
+      <%= f.label "确认密码" %>
+      <%= f.password_field :password_confirmation %>
+      <%= f.submit "修改",class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
