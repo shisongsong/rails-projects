@@ -22,4 +22,8 @@ namespace :db do
                          admin: true)
   end
 
+  desc "add microposts"
+  task add_microposts: :environment do
+    Micropost.create!(user_id: 1,content: "aaa") 
+  end
 end
