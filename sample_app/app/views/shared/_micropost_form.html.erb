@@ -1,7 +1,8 @@
-<%= form_for(@micropost) do |f| %>
+<%= form_for(@micropost, remote: true) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-    <%= f.text_area :content, placeholder: "说点什么..." %>
+    <%= f.text_area :content, placeholder: "说点什么...",maxlength:140, oninput:"leftletters(this)" %>
+    <div style="float:right">还剩 <span id="leftwords" style="display:inline;font-size:120%">140</span>字</div>
   </div>
   <%= f.submit "发布", class: "btn btn-large btn-primary" %>
 <% end %>

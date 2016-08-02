@@ -25,342 +25,360 @@ html {
 
  textarea {
 
-   resize: vertical;
+   resize: none;
+
+ }
+
+
+
+ .center {
+
+   text-align: center;
 
    }
 
 
 
-   .center {
+   .center h1 {
 
-     text-align: center;
+     margin-bottom: 10px;
+
+     }
+     /* typography */
+
+
+
+     h1, h2, h3, h4, h5, h6 {
+
+       line-height: 1;
+
+       }
+
+
+
+       h1 {
+
+         font-size: 3em;
+
+         letter-spacing: -2px;
+
+         margin-bottom: 30px;
+
+         text-align: center;
+
+            }
+
+
+
+            h2 {
+
+              font-size: 1.2em;
+
+              letter-spacing: -1px;
+
+              margin-bottom: 30px;
+
+              text-align: center;
+
+              font-weight: normal;
+
+              color: #999;
+
+                   }
+
+                   p {
+
+                     font-size: 1.1em;
+
+                     line-height: 1.7em;
+
+                      }
+                      /* header */
+
+                      header ul li {
+                        float: right;
+             }
+
+             #logo {
+
+               float: left;
+
+               margin-right: 10px;
+
+               font-size: 1.7em;
+
+               color: #fff;
+
+               text-transform: uppercase;
+
+               letter-spacing: -1px;
+
+               padding-top: 9px;
+
+               font-weight: bold;
+
+               line-height: 1;
+
+                                }
+
+
+
+                                #logo:hover {
+
+                                  color: #fff;
+
+                                  text-decoration: none;
+
+                                   }
+
+                                   /* footer */
+
+
+
+                                   footer {
+
+                                     margin-top: 45px;
+
+                                     padding-top: 5px;
+
+                                     border-top: 1px solid #eaeaea;
+
+                                     color: #999;
+
+   }
+
+
+
+   footer a {
+
+     color: #555;
 
      }
 
 
 
-     .center h1 {
+     footer a:hover {
 
-       margin-bottom: 10px;
+       color: #222;
 
        }
-       /* typography */
 
 
 
-       h1, h2, h3, h4, h5, h6 {
+       footer small {
 
-         line-height: 1;
+         float: left;
 
          }
 
 
 
-         h1 {
+         footer ul {
 
-           font-size: 3em;
+           float: right;
 
-           letter-spacing: -2px;
+           list-style: none;
 
-           margin-bottom: 30px;
+            }
 
-           text-align: center;
 
-              }
 
+            footer ul li {
+              float: left;
+              margin-left: 10px;
+             }
+             /* sidebar */
 
 
-              h2 {
 
-                font-size: 1.2em;
+             aside {
 
-                letter-spacing: -1px;
+               section {
 
-                margin-bottom: 30px;
+                 padding: 10px 0;
 
-                text-align: center;
+                 border-top: 1px solid gray;
 
-                font-weight: normal;
+                 &:first-child {
 
-                color: #999;
+                   border: 0;
 
-                     }
+                   padding-top: 0;
 
-                     p {
+                      }
 
-                       font-size: 1.1em;
+                      span {
 
-                       line-height: 1.7em;
+                        display: block;
 
-                        }
-                        /* header */
+                        margin-bottom: 3px;
 
-               header ul li {
-                float: right;
-               }
+                        line-height: 1;
 
-                         #logo {
+                                           }
 
-                          float: left;
+                                           h1 {
 
-                           margin-right: 10px;
+                                             font-size: 1.4em;
 
-                            font-size: 1.7em;
+                                             text-align: left;
 
-                             color: #fff;
+                                             letter-spacing: -1px;
 
-                              text-transform: uppercase;
+                                             margin-bottom: 3px;
 
-                               letter-spacing: -1px;
+                                             margin-top: 0px;
 
-                                padding-top: 9px;
+                                                                          }
 
-                                 font-weight: bold;
+                                                                           }
 
-                                  line-height: 1;
+                                                                           }
 
-                                  }
 
-                                   
 
-                                   #logo:hover {
+                                                                           .gravatar {
 
-                                    color: #fff;
+                                                                             float: left;
 
-                                     text-decoration: none;
+                                                                             margin-right: 10px;
 
-                                     }
+                                                                              }
+                                                                              /* forms */
 
-/* footer */
-
- 
-
- footer {
-
-  margin-top: 45px;
-
-   padding-top: 5px;
-
-    border-top: 1px solid #eaeaea;
-
-     color: #999;
-
-     }
-
-      
-
-      footer a {
-
-       color: #555;
-
-       }
-
-        
-
-        footer a:hover {
-
-         color: #222;
-
-         }
-
-          
-
-          footer small {
-
-           float: left;
-
-           }
-
-            
-
-            footer ul {
-
-             float: right;
-
-              list-style: none;
-
-              }
-
-               
-
-               footer ul li {
-                float: left;
-                margin-left: 10px;
-               }
-/* sidebar */
-
- 
-
- aside {
-
-  section {
-
-     padding: 10px 0;
-
-        border-top: 1px solid gray;
-
-           &:first-child {
-
-                border: 0;
-
-                     padding-top: 0;
-
-                        }
-
-                           span {
-
-                                display: block;
-
-                                     margin-bottom: 3px;
-
-                                          line-height: 1;
-
-                                             }
-
-                                                h1 {
-
-                                                     font-size: 1.4em;
-
-                                                          text-align: left;
-
-                                                               letter-spacing: -1px;
-
-                                                                    margin-bottom: 3px;
-
-                                                                         margin-top: 0px;
-
-                                                                            }
-
-                                                                             }
-
-                                                                             }
 
                                                                               
-
-                                                                              .gravatar {
-
-                                                                               float: left;
-
-                                                                                margin-right: 10px;
-
-                                                                                }
-/* forms */
-
- 
-form{
+                                                                              form{
 }
- input, textarea, select, .uneditable-input {
+input, textarea, select, .uneditable-input {
 
   border: 1px solid #bbb;
 
 
-    padding: 10px;
+  padding: 10px;
 
-     margin-bottom: 15px;
+  margin-bottom: 15px;
+  width:100%;
 
-      width: 100%;
+    }
+
+
+
+    input {
+
+      height: auto !important;
+
       }
+      #error_explanation {
 
-       
+        color: #f00;
 
-       input {
+        ul {
 
-        height: auto !important;
+          list-style: none;
 
-        }
-#error_explanation {
+          margin: 0 0 18px 0;
 
- color: #f00;
+       }
 
-  ul {
-
-     list-style: none;
-
-        margin: 0 0 18px 0;
-
-         }
-
-         }
-
-          
-
-          .field_with_errors {
+       }
 
 
-            } 
-            .users {
 
-             list-style: none;
+       .field_with_errors {
 
-              margin: 0;
 
-               li {
+          } 
+          .users {
 
-                  overflow: auto;
+            list-style: none;
 
-                     padding: 10px 0;
+            margin: 0;
 
-                        border-top: 1px solid gray;
+            li {
 
-                           &:last-child {
+              overflow: auto;
 
-                                border-bottom: 1px solid gray;
+              padding: 10px 0;
 
-                                   }
+              border-top: 1px solid gray;
 
-                                    }
+              &:last-child {
 
-                                    }
-                                    /* microposts */
+                border-bottom: 1px solid gray;
 
-                                     
+                                 }
 
-                                     .microposts {
+                                  }
 
-                                      list-style: none;
+                                  }
+                                  /* microposts */
 
-                                       margin: 10px 0 0 0;
 
-                                        
 
-                                         li {
+                                  .microposts {
 
-                                            padding: 10px 0;
+                                    list-style: none;
 
-                                               border-top: 1px solid #e8e8e8;
+                                    margin: 10px 0 0 0;
+
+
+
+                                    li {
+
+                                      padding: 10px 0;
+
+                                      border-top: 1px solid #e8e8e8;
+
+                                              }
+
+                                              }
+
+                                              .content {
+
+                                                display: block;
+
+                                               }
+
+                                               .timestamp {
+
+                                                 color: gray;
 
                                                 }
 
-                                                }
+                                                .gravatar {
 
-                                                .content {
+                                                  float: left;
 
-                                                 display: block;
-
-                                                 }
-
-                                                 .timestamp {
-
-                                                  color: gray;
+                                                  margin-right: 10px;
 
                                                   }
 
-                                                  .gravatar {
+                                                  aside {
 
-                                                   float: left;
+                                                    textarea {
 
-                                                    margin-right: 10px;
+                                                      height: 100px;
 
-                                                    }
+                                                      margin-bottom: 5px;
 
-                                                    aside {
+                                                          }
 
-                                                     textarea {
-
-                                                        height: 100px;
-
-                                                           margin-bottom: 5px;
-
-                                                            }
-
-                                                            }
+                                                          }
+                                                          .stats { overflow: auto; a{
+                                                              float: left;
+                                                              padding: 0 10px;
+                                                              border-left: 1px solid gray; color: gray;
+                                                              &:first-child {
+                                                                padding-left: 0;
+                                                                border: 0; }
+                                                              &:hover { text-decoration: none; color: blue;
+        }
+        } strong {
+          display: block;
+                      }
+                      }
+                      .user_avatars { overflow: auto; margin-top: 10px; .gravatar {
+                          margin: 1px 1px;
+                                    }
+                                    }
